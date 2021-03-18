@@ -32,6 +32,9 @@ func TestSend(t *testing.T) {
 
 		t.Run(name, func(t *testing.T) {
 			_, err := sms.Send(context.Background(), tc.data)
+			if err != nil {
+				fmt.Println(err)
+			}
 			require.Equal(t, tc.want, err)
 		})
 	}
