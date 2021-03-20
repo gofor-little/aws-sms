@@ -24,6 +24,7 @@ func Initialize(profile string, region string) error {
 		sess, err = session.NewSessionWithOptions(session.Options{
 			Config: aws.Config{
 				Region: aws.String(region),
+				CredentialsChainVerboseErrors: aws.Bool(true),
 			},
 			Profile: profile,
 		})
