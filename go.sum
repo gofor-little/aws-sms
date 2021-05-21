@@ -7,8 +7,8 @@ github.com/gofor-little/aws-sdk-mock v0.1.2 h1:9DBQWzlMcxiOU6rnTECS3WDxBzLaqogUh
 github.com/gofor-little/aws-sdk-mock v0.1.2/go.mod h1:D9fpSHdv1mt7MjXK26ZDQ92pEdHxIMC8OMsNa48Fo+U=
 github.com/gofor-little/env v0.4.4 h1:cLDgD7Jp5vx75bNBfxZwBHIFXhePqjNXbeIqtXsrAyY=
 github.com/gofor-little/env v0.4.4/go.mod h1:Jefo+ty+Xy9xSIlClJ73QJR1eCV0fCEU4denlQnc3z4=
-github.com/gofor-little/xerror v0.2.0 h1:giwPs4Z9Cj2an2daVh844PaE1KmmFUm7XKl8vm/0fXk=
-github.com/gofor-little/xerror v0.2.0/go.mod h1:wjsFMng4jjalKHCSIocghCPYXEHqdpkb37EHTwrlj2I=
+github.com/gofor-little/xerror v0.2.3 h1:IhBbOclv675KbTfbAdL9UTacPiG+i2JEmu1/92fUV4w=
+github.com/gofor-little/xerror v0.2.3/go.mod h1:wjsFMng4jjalKHCSIocghCPYXEHqdpkb37EHTwrlj2I=
 github.com/jmespath/go-jmespath v0.4.0 h1:BEgLn5cpjn8UN1mAw4NjwDrS35OdebyEtFe+9YPoQUg=
 github.com/jmespath/go-jmespath v0.4.0/go.mod h1:T8mJZnbsbmF+m6zOOFylbeCJqk5+pHWvzYPziyZiYoo=
 github.com/jmespath/go-jmespath/internal/testify v1.5.1 h1:shLQSRRSCCPj3f2gpwzGwWFoC7ycTf1rcQZHOlsJ6N8=
