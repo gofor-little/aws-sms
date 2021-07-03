@@ -11,7 +11,7 @@ import (
 // Send builds a SMS message and sends it.
 func Send(ctx context.Context, data Data) (string, error) {
 	if SNSClient == nil {
-		return "", xerror.Newf("SNSClient is nil")
+		return "", xerror.New("SNSClient is nil")
 	}
 
 	input := &sns.PublishInput{
@@ -26,12 +26,12 @@ func Send(ctx context.Context, data Data) (string, error) {
 	}
 
 	if err := input.Validate(); err != nil {
-		return "", xerror.New("failed to validate sns.PublishInput", err)
+		return "", xerror.Wrap("failed to validate sns.PublishInput", err)
 	}
 
 	output, err := SNSClient.PublishWithContext(ctx, input)
 	if err != nil {
-		return "", xerror.New("failed to publish SMS message", err)
+		return "", xerror.Wrap("failed to publish SMS message", err)
 	}
 
 	return *output.MessageId, nil
