@@ -1,6 +1,7 @@
 package sms_test
 
 import (
+	"context"
 	"strings"
 	"testing"
 
@@ -11,11 +12,11 @@ import (
 )
 
 func setup(t *testing.T) []string {
-	if err := env.Load("../../.env"); err != nil {
+	if err := env.Load(".env"); err != nil {
 		t.Logf("failed to load .env file, ignore if running in CI/CD: %v", err)
 	}
 
-	require.NoError(t, sms.Initialize(env.Get("AWS_PROFILE", ""), env.Get("AWS_REGION", "")))
+	require.NoError(t, sms.Initialize(context.Background(), env.Get("AWS_PROFILE", ""), env.Get("AWS_REGION", "")))
 
 	recipients, err := env.MustGet("TEST_SMS_RECIPIENTS")
 	require.NoError(t, err)

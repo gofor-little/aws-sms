@@ -1,41 +1,36 @@
 package sms
 
 import (
-	"github.com/aws/aws-sdk-go/aws"
-	"github.com/aws/aws-sdk-go/aws/session"
-	"github.com/aws/aws-sdk-go/service/sns"
-	"github.com/aws/aws-sdk-go/service/sns/snsiface"
-	"github.com/gofor-little/xerror"
+	"context"
+	"fmt"
+
+	"github.com/aws/aws-sdk-go-v2/aws"
+	"github.com/aws/aws-sdk-go-v2/config"
+	"github.com/aws/aws-sdk-go-v2/service/sns"
 )
 
 var (
 	// SNSClient is used to interact with AWS SNS.
-	SNSClient snsiface.SNSAPI
+	SNSClient *sns.Client
 )
 
 // Initialize will initialize the sms package. Both the profile
 // and region parameters are optional if authentication can be achieved
 // via another method. For example, environment variables or IAM roles.
-func Initialize(profile string, region string) error {
-	var sess *session.Session
+func Initialize(ctx context.Context, profile string, region string) error {
+	var cfg aws.Config
 	var err error
 
 	if profile != "" && region != "" {
-		sess, err = session.NewSessionWithOptions(session.Options{
-			Config: aws.Config{
-				Region: aws.String(region),
-				CredentialsChainVerboseErrors: aws.Bool(true),
-			},
-			Profile: profile,
-		})
+		cfg, err = config.LoadDefaultConfig(ctx, config.WithSharedConfigProfile(profile), config.WithRegion(region))
 	} else {
-		sess, err = session.NewSession()
+		cfg, err = config.LoadDefaultConfig(ctx)
 	}
 	if err != nil {
-		return xerror.Wrap("failed to create session.Session", err)
+		return fmt.Errorf("failed to load default config: %w", err)
 	}
 
-	SNSClient = sns.New(sess)
+	SNSClient = sns.NewFromConfig(cfg)
 
 	return nil
 }
