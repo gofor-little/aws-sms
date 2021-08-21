@@ -15,7 +15,6 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 * **BREAKING**: Renamed ```Data.SenderID``` JSON tag from ```senderID``` to ```senderId```.
 * Refactored tests.
 
-
 ## v0.1.0 - 2021-03-20
 ### Added
 * Added ```Send``` function.
