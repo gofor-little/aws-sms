@@ -22,8 +22,8 @@ github.com/davecgh/go-spew v1.1.0 h1:ZDRjVQ15GmhC3fiQ8ni8+OwkZQO4DARzQgrnXU1Liz8
 github.com/davecgh/go-spew v1.1.0/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
 github.com/gofor-little/env v0.4.4 h1:cLDgD7Jp5vx75bNBfxZwBHIFXhePqjNXbeIqtXsrAyY=
 github.com/gofor-little/env v0.4.4/go.mod h1:Jefo+ty+Xy9xSIlClJ73QJR1eCV0fCEU4denlQnc3z4=
-github.com/gofor-little/xerror v0.5.0 h1:VnbR/cM8Qw2Ahw/vNXJIU3IJ/lCDAH+ewh875FaxkUM=
-github.com/gofor-little/xerror v0.5.0/go.mod h1:STbmj77c00keIwdRTBGGoixSyfVqz/pukORfbElaWck=
+github.com/gofor-little/xerror v0.5.1 h1:DXYXByhA2ffvYCPrTGp3ffirbTYd3ITxZdhgY7bY3Wg=
+github.com/gofor-little/xerror v0.5.1/go.mod h1:STbmj77c00keIwdRTBGGoixSyfVqz/pukORfbElaWck=
 github.com/google/go-cmp v0.5.4/go.mod h1:v8dTdLbMG2kIc/vJvl+f65V22dbkXbowE6jgT/gNBxE=
 github.com/google/go-cmp v0.5.6 h1:BKbKCqvP6I+rmFHt06ZmyQtvB8xAkWdhFyr0ZUNZcxQ=
 github.com/google/go-cmp v0.5.6/go.mod h1:v8dTdLbMG2kIc/vJvl+f65V22dbkXbowE6jgT/gNBxE=
