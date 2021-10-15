@@ -3,9 +3,9 @@ module github.com/gofor-little/aws-sms
 go 1.17
 
 require (
-	github.com/aws/aws-sdk-go-v2 v1.9.1
+	github.com/aws/aws-sdk-go-v2 v1.9.2
 	github.com/aws/aws-sdk-go-v2/config v1.8.2
-	github.com/aws/aws-sdk-go-v2/service/sns v1.8.1
+	github.com/aws/aws-sdk-go-v2/service/sns v1.8.2
 	github.com/gofor-little/env v0.4.4
 	github.com/gofor-little/xerror v0.5.1
 	github.com/stretchr/testify v1.7.0
