@@ -6,7 +6,7 @@ require (
 	github.com/aws/aws-sdk-go-v2 v1.11.1
 	github.com/aws/aws-sdk-go-v2/config v1.10.1
 	github.com/aws/aws-sdk-go-v2/service/sns v1.11.0
-	github.com/gofor-little/env v0.4.4
+	github.com/gofor-little/env v1.0.2
 	github.com/gofor-little/xerror v0.5.1
 	github.com/stretchr/testify v1.7.0
 )
