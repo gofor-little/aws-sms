@@ -5,7 +5,7 @@ go 1.17
 require (
 	github.com/aws/aws-sdk-go-v2 v1.16.3
 	github.com/aws/aws-sdk-go-v2/config v1.15.4
-	github.com/aws/aws-sdk-go-v2/service/sns v1.17.4
+	github.com/aws/aws-sdk-go-v2/service/sns v1.17.5
 	github.com/gofor-little/env v1.0.3
 	github.com/gofor-little/xerror v1.0.0
 	github.com/stretchr/testify v1.7.1
