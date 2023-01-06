@@ -35,7 +35,7 @@ func TestSend(t *testing.T) {
 			if err != nil {
 				fmt.Println(err)
 			}
-			require.Equal(t, tc.want, err, err.Error())
+			require.Equal(t, tc.want, err)
 		})
 	}
 }
