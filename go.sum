@@ -28,8 +28,8 @@ github.com/creack/pty v1.1.9/go.mod h1:oKZEueFk5CKHvIhNR5MUki03XCEU+Q6VDXinZuGJ3
 github.com/davecgh/go-spew v1.1.0/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
 github.com/davecgh/go-spew v1.1.1 h1:vj9j/u1bqnvCEfJOwUhtlOARqs3+rkHYY13jYWTU97c=
 github.com/davecgh/go-spew v1.1.1/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
-github.com/gofor-little/env v1.0.10 h1:bdk0NFlc3p8PjWOcMYJ/lERlWq6P/TJZmnXjm9XqdzQ=
-github.com/gofor-little/env v1.0.10/go.mod h1:Y8BleAjiH5U6IOCA0BWaJyZr7jCbYv7gbm+6N9x1hic=
+github.com/gofor-little/env v1.0.11 h1:TUrbUq6lUlGgkISo1a8EJQ20B7qFbQp1mCP2fS4swMQ=
+github.com/gofor-little/env v1.0.11/go.mod h1:0siicl1B6ktqZMRhqUkHY4OWKJvZkt7QMIg92a4yDDs=
 github.com/gofor-little/xerror v1.0.5 h1:H4/zuPgs4FUENx/fBWVPZRU5qEAoTMcsDzOwEqstCrw=
 github.com/gofor-little/xerror v1.0.5/go.mod h1:3DxKIFSZ9pp4iHfaMzLo5lxo8OU1VhYq1rMpeZf8lVg=
 github.com/google/go-cmp v0.5.8 h1:e6P7q2lk1O+qJJb4BtCQXlK8vWEO8V1ZeuEdJNOqZyg=
